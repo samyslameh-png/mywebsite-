@@ -1,47 +1,52 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <header>
-        <title>Welcome</title>
-        <h1>My website</h1>
-        <p>Welcome to my website</p>
-        <nav>
-            <a href="#About me">About me</a>
-            <a href="#contact">contact</a>
-            <a href="#projects">Projects</a>
-            <a href="another page.html">Login</a>
-        </nav>
+    <html lang="en">
+        <head>
+            <title>welcome</title>
+        </head>
+        <header id="header">
+        <img src="C:\Users\samys\OneDrive\المستندات\for coding sestion\I AM.... STEVEEE.jpg" alt="Profile Image" width="100" height="100" onclick="YOURCOOKED()">
         </header>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <section id="About me">
-        <h2>About me</h2>
-        <p>Hi, My name is Sami and I am a Web developer and coding inspired me to create this website</p>
-    </section>
-    <section id="projects">
-        <h3>Projects</h3>
-        <div class="container">
-            <div class="card">
-                <h4>Project 1</h4>
-                <p>coding websites</p>
-            </div>
-            <div class="card">
-                <h4>Project 2</h4>
-                <p>atm system</p>
-            </div>
-            <div class="card">
-                <h4>Project 3</h4>
-                <p>calculator</p>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <h3>Contact</h3>
-        <p>you can contact me on my email and whatsapp</p>
-        <p>email: example@example.com</p>
-        <p>whatsapp: +966234567890</p>
-        <p>© 2026 My Website. All rights reserved.</p>
-    </section>
-     </body>
-</html>
+        <body>
+            <h1 id="title" onclick="Changestyle()">Wellcome students</h1>
+            <p id="text">Hi there! welcome to my website My name is Samy.</p>
+            <link rel="stylesheet" href="style.css">
+            <button onclick="removetext()">Remove Text</button>
+            <h2 id="heading"></h2>
+            <button onclick="addMessage()">Add Text</button>
+            <script src="script.js"></script>
+            <nav id="nav">
+            <a href="https://youtube.com/@DarkNova1232">SUB</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+        </body>
+        <section id="about" class="about">
+            <h2 id="section">About Me</h2>
+            <p id="section1">Hello! My name is Samy, and I am a passionate web developer. I enjoy creating interactive and user-friendly websites. In my free time, I like to explore new technologies and improve my coding skills.</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2 ID="idk">Contact Me</h2>
+            <p id="bababoy">If you have any questions or inquiries, feel free to reach out to me using the contact form below:</p>
+            <form method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <button onclick="alertSubmit()">Submit</button>
+                <button onclick="sayHello()">Say Hello</button>
+            </form>
+        </section>
+        <p class="message"></p>
+        <section id="login" class="login">
+            <h2 id="login2">welcome to the web please login for more features</h2>
+            <p id="login3">Please enter your credentials to access the full functionality of the website.</p>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="button">Login</button>
+            </form>
+        </section>
+    </html>
